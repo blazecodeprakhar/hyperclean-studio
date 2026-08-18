@@ -123,6 +123,37 @@ document.addEventListener('DOMContentLoaded', () => {
         }, step.delay);
       });
     });
+  // Mobile Navigation Drawer Toggle
+  const navToggle = document.getElementById('nav-toggle');
+  const navMenu = document.getElementById('nav-menu');
+
+  if (navToggle && navMenu) {
+    navToggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isActive = navMenu.classList.toggle('active');
+      const icon = navToggle.querySelector('i');
+      if (icon) {
+        icon.className = isActive ? 'fa-solid fa-xmark' : 'fa-solid fa-bars';
+      }
+    });
+
+    // Close mobile menu on clicking any navigation link
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('active');
+        const icon = navToggle.querySelector('i');
+        if (icon) icon.className = 'fa-solid fa-bars';
+      });
+    });
+
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!navMenu.contains(e.target) && !navToggle.contains(e.target)) {
+        navMenu.classList.remove('active');
+        const icon = navToggle.querySelector('i');
+        if (icon) icon.className = 'fa-solid fa-bars';
+      }
+    });
   }
 
 });
