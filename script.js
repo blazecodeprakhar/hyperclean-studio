@@ -25,18 +25,21 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 3000);
   };
 
-  // Download Handlers
-  const downloadExeBtns = document.querySelectorAll('.download-exe-trigger');
-  downloadExeBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      showToast('Downloading HyperCleanStudio.exe (38.0 MB)...', 'fa-file-arrow-down');
-    });
-  });
+  // Download Handlers - Ensure immediate downloading feedback for all download buttons
+  const downloadBtns = document.querySelectorAll('.download-exe-trigger, .download-zip-trigger, [download], a[href$=".zip"], a[href$=".exe"], a[href$=".py"], a[href$=".txt"]');
+  
+  downloadBtns.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      const href = btn.getAttribute('href');
+      const filename = btn.getAttribute('download') || (href ? href.split('/').pop() : '');
 
-  const downloadZipBtns = document.querySelectorAll('.download-zip-trigger');
-  downloadZipBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      showToast('Downloading hyperclean-studio-v2.0-source.zip...', 'fa-file-zipper');
+      if (btn.classList.contains('download-exe-trigger')) {
+        showToast('Downloading HyperCleanStudio-v2.0.zip (37.8 MB)...', 'fa-file-arrow-down');
+      } else if (btn.classList.contains('download-zip-trigger')) {
+        showToast('Downloading hyperclean-studio-v2.0-source.zip...', 'fa-file-zipper');
+      } else if (filename) {
+        showToast(`Downloading ${filename}...`, 'fa-file-arrow-down');
+      }
     });
   });
 
