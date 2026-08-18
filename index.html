@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary SEO Tags -->
+  <title>HyperClean Studio v2.0 | Free Open Source Windows Cleaner & RAM Optimizer</title>
+  <meta name="title" content="HyperClean Studio v2.0 | Free Open Source Windows Cleaner & RAM Optimizer">
+  <meta name="description" content="HyperClean Studio v2.0 is a free open-source Windows disk cleanup utility and RAM manager created by Prakhar Yadav (@blazecodeprakhar). Reclaim gigabytes from developer caches, purge GPU shader pipelines, and trim RAM working sets.">
+  <meta name="keywords" content="hyperclean studio, windows cleaner, ram optimizer, disk cleanup, dev cache cleaner, npm cache clean, shader cache purge, win32 emptyworkingset, prakhar yadav, blazecodeprakhar, open source windows cleaner, customtkinter python, performance suite">
+  <meta name="author" content="Prakhar Yadav (blazecodeprakhar)">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <link rel="canonical" href="https://blazecodeprakhar.github.io/hyperclean-studio/">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://blazecodeprakhar.github.io/hyperclean-studio/">
+  <meta property="og:title" content="HyperClean Studio v2.0 | Free Open Source Windows Cleaner & RAM Optimizer">
+  <meta property="og:description" content="Reclaim gigabytes of disk space from developer caches, purge GPU shader pipelines, and trim Windows RAM working sets instantly with HyperClean Studio by Prakhar Yadav.">
+  <meta property="og:image" content="app_icon.png">
+  <meta property="og:site_name" content="HyperClean Studio">
+
+  <!-- Twitter / X Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://blazecodeprakhar.github.io/hyperclean-studio/">
+  <meta name="twitter:title" content="HyperClean Studio v2.0 | Free Open Source Windows Cleaner & RAM Optimizer">
+  <meta name="twitter:description" content="Reclaim gigabytes of disk space from developer caches, purge GPU shader pipelines, and trim Windows RAM working sets instantly.">
+  <meta name="twitter:image" content="app_icon.png">
+  <meta name="twitter:creator" content="@iitzprakhar">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="app_icon.png">
+  <link rel="apple-touch-icon" href="app_icon.png">
+  
+  <!-- Typography & Icons -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Schema.org JSON-LD Structured Data for Google Rich Snippets -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "HyperClean Studio",
+    "operatingSystem": "Windows 10, Windows 11",
+    "applicationCategory": "UtilitiesApplication",
+    "softwareVersion": "2.0",
+    "description": "HyperClean Studio v2.0 is an open-source Windows disk cleaner and RAM manager created by Prakhar Yadav (blazecodeprakhar). Reclaim disk space from developer caches, RAM working sets, GPU shader pipelines, and leftover files.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0.00",
+      "priceCurrency": "USD"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Prakhar Yadav",
+      "alternateName": "blazecodeprakhar",
+      "url": "https://blazecodeprakhar.netlify.app",
+      "sameAs": [
+        "https://github.com/blazecodeprakhar",
+        "https://www.linkedin.com/in/prakhar-yadav096/",
+        "https://x.com/iitzprakhar"
+      ]
+    },
+    "downloadUrl": "https://github.com/blazecodeprakhar/hyperclean-studio",
+    "license": "https://opensource.org/licenses/MIT"
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="container navbar-container">
+      <a href="#" class="brand-logo" aria-label="HyperClean Studio Homepage">
+        <img src="app_icon.png" alt="HyperClean Icon" class="brand-icon-img">
+        <span class="brand-title">HyperClean Studio</span>
+        <span class="brand-version">v2.0</span>
+      </a>
+
+      <nav class="nav-menu">
+        <ul class="nav-links">
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#specifications">Specifications</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#cli">Build Guide</a></li>
+          <li><a href="#downloads">Downloads</a></li>
+          <li><a href="#author">Author</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="https://github.com/blazecodeprakhar/hyperclean-studio" target="_blank" class="btn btn-secondary btn-sm" aria-label="View on GitHub">
+          <i class="fa-brands fa-github"></i> GitHub
+        </a>
+        <a href="HyperCleanStudio.exe" download="HyperCleanStudio.exe" class="btn btn-primary btn-sm download-exe-trigger" aria-label="Download Windows Executable">
+          <i class="fa-brands fa-windows"></i> Download EXE
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Full Screen Hero Section -->
+  <main>
+    <section class="hero" id="overview">
+      <div class="container">
+        <div class="hero-grid">
+          <!-- Hero Content -->
+          <div class="hero-content">
+            <div class="hero-badge">
+              <i class="fa-solid fa-shield-halved" style="color: var(--accent-emerald);"></i> Open Source Windows Utility
+            </div>
+
+            <h1 class="hero-title">
+              Clean Disk Space & <span class="gradient-text">Optimize Windows RAM</span> Instantly
+            </h1>
+
+            <p class="hero-subtitle">
+              A fast, safe, open-source tool for Windows 10 & 11 developed by <strong>Prakhar Yadav</strong>. Reclaim gigabytes from developer caches, purge GPU shaders, and trim RAM working sets with a single click.
+            </p>
+
+            <!-- Download Action Buttons -->
+            <div class="hero-actions">
+              <a href="HyperCleanStudio.exe" download="HyperCleanStudio.exe" class="btn btn-primary btn-lg download-exe-trigger" aria-label="Download for Windows EXE">
+                <i class="fa-brands fa-windows"></i> Download for Windows (.exe)
+              </a>
+
+              <a href="hyperclean-studio-v2.0-source.zip" download class="btn btn-blue btn-lg download-zip-trigger" aria-label="Download Source Code ZIP">
+                <i class="fa-solid fa-file-zipper"></i> Source Code (.zip)
+              </a>
+
+              <a href="https://github.com/blazecodeprakhar/hyperclean-studio" target="_blank" class="btn btn-secondary btn-lg" aria-label="GitHub Repository">
+                <i class="fa-brands fa-github"></i> GitHub Repo
+              </a>
+            </div>
+
+            <!-- Specs Summary -->
+            <div class="hero-specs-row">
+              <span><i class="fa-brands fa-windows" style="color: var(--accent-blue);"></i> Windows 10 / 11</span>
+              <span>•</span>
+              <span><i class="fa-solid fa-box"></i> 38 MB Portable EXE</span>
+              <span>•</span>
+              <span><i class="fa-solid fa-shield-check" style="color: var(--accent-emerald);"></i> 100% Safe Win32 APIs</span>
+              <span>•</span>
+              <span><i class="fa-solid fa-code"></i> MIT License</span>
+            </div>
+          </div>
+
+          <!-- Hero App Card Showcase -->
+          <div class="hero-visual">
+            <div class="hero-card-wrapper">
+              <!-- Floating Badges -->
+              <div class="hero-floating-badge float-1">
+                <i class="fa-solid fa-bolt" style="color: var(--accent-blue);"></i> Reclaim 33+ GB Junk
+              </div>
+              <div class="hero-floating-badge float-2">
+                <i class="fa-solid fa-shield-check" style="color: var(--accent-emerald);"></i> 100% Safe Win32 API
+              </div>
+
+              <div class="hero-card">
+                <div class="hero-card-top">
+                  <img src="app_icon.png" alt="HyperClean Studio App Logo" class="hero-app-icon">
+                  <div>
+                    <div style="display: flex; align-items: center; gap: 8px;">
+                      <h3 class="hero-app-name">HyperClean Studio</h3>
+                      <span class="hero-app-status"><span class="status-dot"></span> Active</span>
+                    </div>
+                    <span class="hero-app-version">v2.0 Performance Suite</span>
+                  </div>
+                </div>
+
+                <div class="hero-stats-grid">
+                  <div class="stat-box">
+                    <span class="stat-num">33.5 GB</span>
+                    <span class="stat-lbl">Junk Reclaimed</span>
+                  </div>
+                  <div class="stat-box">
+                    <span class="stat-num">2.4 GB</span>
+                    <span class="stat-lbl">RAM Freed</span>
+                  </div>
+                  <div class="stat-box">
+                    <span class="stat-num">0 Config</span>
+                    <span class="stat-lbl">Ready to Run</span>
+                  </div>
+                </div>
+
+                <div class="hero-card-features">
+                  <div class="card-feat-item">
+                    <i class="fa-solid fa-circle-check" style="color: var(--accent-emerald);"></i>
+                    <span>Win32 <code>EmptyWorkingSet</code> RAM Optimization</span>
+                  </div>
+                  <div class="card-feat-item">
+                    <i class="fa-solid fa-circle-check" style="color: var(--accent-emerald);"></i>
+                    <span>NVIDIA, AMD & DirectX GPU Shader Purge</span>
+                  </div>
+                  <div class="card-feat-item">
+                    <i class="fa-solid fa-circle-check" style="color: var(--accent-emerald);"></i>
+                    <span>NPM, Pip, Cargo & Gradle Dev Cache Reclaimer</span>
+                  </div>
+                </div>
+
+                <div class="hero-card-download">
+                  <div>
+                    <strong>Ready for Deployment</strong>
+                    <p>Single binary executable (.exe)</p>
+                  </div>
+                  <a href="HyperCleanStudio.exe" download="HyperCleanStudio.exe" class="btn btn-primary btn-sm download-exe-trigger" aria-label="Download Executable">
+                    <i class="fa-solid fa-download"></i> Download
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Specifications -->
+    <section class="section" id="specifications">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">SPECIFICATIONS</span>
+          <h2 class="section-title">System & Compatibility Matrix</h2>
+          <p class="section-desc">Key details about supported operating systems, APIs, toolchains, and distribution formats.</p>
+        </div>
+
+        <div class="spec-table-box">
+          <table class="spec-table">
+            <thead>
+              <tr>
+                <th scope="col">Feature</th>
+                <th scope="col">Supported Details</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Supported OS</td>
+                <td>Windows 10, Windows 11, Windows Server 2019+ (64-bit)</td>
+              </tr>
+              <tr>
+                <td>RAM Optimization</td>
+                <td>Win32 <code>EmptyWorkingSet</code> process memory trimming via <code>psapi.dll</code></td>
+              </tr>
+              <tr>
+                <td>GPU Shader Caches</td>
+                <td>NVIDIA (DXCache, GLCache), AMD Radeon (DxCache), DirectX (D3DSCache), Intel Arc</td>
+              </tr>
+              <tr>
+                <td>Developer Toolchains</td>
+                <td>Node.js (NPM, Yarn, PNPM), Python (Pip, Poetry, UV), Java (Gradle, Maven), Rust (Cargo), Go</td>
+              </tr>
+              <tr>
+                <td>App Leftovers</td>
+                <td>Scans AppData directories and cross-checks with Windows Registry uninstall keys</td>
+              </tr>
+              <tr>
+                <td>UI & Format</td>
+                <td>CustomTkinter Python GUI | Standalone Portable Windows <code>.exe</code></td>
+              </tr>
+              <tr>
+                <td>License & Author</td>
+                <td>MIT License | Built by Prakhar Yadav (<a href="https://github.com/blazecodeprakhar" target="_blank" style="color: var(--accent-blue);">@blazecodeprakhar</a>)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Grid Section -->
+    <section class="section section-alt" id="features">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">CAPABILITIES</span>
+          <h2 class="section-title">What HyperClean Studio Cleans</h2>
+          <p class="section-desc">Simple, automated cleaning for system junk, RAM working sets, and heavy developer build caches.</p>
+        </div>
+
+        <div class="features-grid">
+          <!-- Feature 1 -->
+          <article class="feature-card">
+            <div class="feature-icon"><i class="fa-solid fa-memory"></i></div>
+            <h3>Win32 RAM & Shader Cleaner</h3>
+            <p>Trims unused RAM working sets and purges compiled GPU shader caches to boost performance.</p>
+            <ul class="feature-list">
+              <li><i class="fa-solid fa-check"></i> Trims process RAM via Win32 <code>EmptyWorkingSet</code></li>
+              <li><i class="fa-solid fa-check"></i> Cleans NVIDIA, AMD, and DirectX shader pipelines</li>
+              <li><i class="fa-solid fa-check"></i> Flushes Windows DNS resolver cache</li>
+            </ul>
+          </article>
+
+          <!-- Feature 2 -->
+          <article class="feature-card">
+            <div class="feature-icon"><i class="fa-solid fa-code-branch"></i></div>
+            <h3>Developer Cache Purger</h3>
+            <p>Scans and clears accumulated dependency stores from software development toolchains.</p>
+            <ul class="feature-list">
+              <li><i class="fa-solid fa-check"></i> Cleans NPM, Yarn, and PNPM package caches</li>
+              <li><i class="fa-solid fa-check"></i> Purges Python Pip, PyPI downloads, and UV stores</li>
+              <li><i class="fa-solid fa-check"></i> Reclaims space from Gradle, Cargo, and Go builds</li>
+            </ul>
+          </article>
+
+          <!-- Feature 3 -->
+          <article class="feature-card">
+            <div class="feature-icon"><i class="fa-solid fa-folder-tree"></i></div>
+            <h3>App Leftovers & Script Audit</h3>
+            <p>Finds orphaned application directories and dropped script files in temporary locations.</p>
+            <ul class="feature-list">
+              <li><i class="fa-solid fa-check"></i> Checks AppData against Windows Registry entries</li>
+              <li><i class="fa-solid fa-check"></i> Audits temporary script files (.bat, .vbs, .ps1)</li>
+              <li><i class="fa-solid fa-check"></i> Cleans Chrome, Edge, Brave, and Firefox caches</li>
+            </ul>
+          </article>
+        </div>
+
+        <!-- Simulation Scan Box -->
+        <div class="demo-box">
+          <div class="demo-top">
+            <div>
+              <h4>Interactive Detector Simulation</h4>
+              <p>Test the detection algorithm directly in your browser.</p>
+            </div>
+            <button class="btn btn-primary btn-sm" id="start-demo-btn" aria-label="Run Simulation">
+              <i class="fa-solid fa-play"></i> Run Simulation
+            </button>
+          </div>
+
+          <div class="progress-bar">
+            <div class="progress-fill" id="demo-progress-fill"></div>
+          </div>
+
+          <div class="demo-terminal" id="demo-terminal">
+            <div style="color: #64748b;">Click "Run Simulation" to execute the detection scan pipeline...</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Build & Developer Guide -->
+    <section class="section" id="cli">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">DEVELOPER GUIDE</span>
+          <h2 class="section-title">Run from Source Code</h2>
+          <p class="section-desc">Simple terminal commands to clone, run, and build the project locally.</p>
+        </div>
+
+        <div class="cli-box">
+          <div class="cli-header">
+            <span><i class="fa-solid fa-terminal"></i> Terminal Commands</span>
+            <span>Python 3.10+</span>
+          </div>
+          <div class="cli-body">
+            <div class="cli-line">
+              <span><span class="cli-comment"># 1. Clone repository</span><br><span class="cli-cmd">git clone https://github.com/blazecodeprakhar/hyperclean-studio.git && cd hyperclean-studio</span></span>
+              <button class="copy-btn" onclick="copyCode('git clone https://github.com/blazecodeprakhar/hyperclean-studio.git && cd hyperclean-studio', this)">Copy</button>
+            </div>
+            <div class="cli-divider"></div>
+            <div class="cli-line">
+              <span><span class="cli-comment"># 2. Install dependencies</span><br><span class="cli-cmd">pip install -r requirements.txt</span></span>
+              <button class="copy-btn" onclick="copyCode('pip install -r requirements.txt', this)">Copy</button>
+            </div>
+            <div class="cli-divider"></div>
+            <div class="cli-line">
+              <span><span class="cli-comment"># 3. Launch application</span><br><span class="cli-cmd">python main.py</span></span>
+              <button class="copy-btn" onclick="copyCode('python main.py', this)">Copy</button>
+            </div>
+            <div class="cli-divider"></div>
+            <div class="cli-line">
+              <span><span class="cli-comment"># 4. Build standalone executable</span><br><span class="cli-cmd">python build_exe.py</span></span>
+              <button class="copy-btn" onclick="copyCode('python build_exe.py', this)">Copy</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Simplified Distribution / Downloads Section -->
+    <section class="section section-alt" id="downloads">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">DOWNLOADS</span>
+          <h2 class="section-title">Download Packages</h2>
+          <p class="section-desc">Get the standalone executable or download the full source code package.</p>
+        </div>
+
+        <!-- Main Featured Downloads -->
+        <div class="download-primary-grid">
+          <!-- Executable Card -->
+          <div class="download-main-card">
+            <div class="dl-icon"><i class="fa-brands fa-windows"></i></div>
+            <div class="dl-details">
+              <h3>Standalone Windows Executable</h3>
+              <p>Single portable file. No Python required. Simply download and run on Windows 10 or 11.</p>
+              <span class="dl-meta"><i class="fa-solid fa-file-code"></i> HyperCleanStudio.exe • 38.0 MB</span>
+            </div>
+            <a href="HyperCleanStudio.exe" download="HyperCleanStudio.exe" class="btn btn-primary btn-lg download-exe-trigger" aria-label="Download Windows Executable">
+              <i class="fa-solid fa-download"></i> Download EXE
+            </a>
+          </div>
+
+          <!-- Source Code Card -->
+          <div class="download-main-card">
+            <div class="dl-icon dl-icon-zip"><i class="fa-solid fa-file-zipper"></i></div>
+            <div class="dl-details">
+              <h3>Source Code Archive</h3>
+              <p>Complete project codebase containing all detector modules, CustomTkinter widgets, and build scripts.</p>
+              <span class="dl-meta"><i class="fa-solid fa-box-archive"></i> hyperclean-studio-v2.0-source.zip</span>
+            </div>
+            <a href="hyperclean-studio-v2.0-source.zip" download class="btn btn-blue btn-lg download-zip-trigger" aria-label="Download Source ZIP">
+              <i class="fa-solid fa-download"></i> Download ZIP
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Resources Bar -->
+        <div class="quick-resources-bar">
+          <span class="quick-title">Quick Downloads:</span>
+          <a href="main.py" download class="btn btn-secondary btn-sm"><i class="fa-brands fa-python"></i> main.py</a>
+          <a href="build_exe.py" download class="btn btn-secondary btn-sm"><i class="fa-solid fa-gears"></i> build_exe.py</a>
+          <a href="requirements.txt" download class="btn btn-secondary btn-sm"><i class="fa-solid fa-file-lines"></i> requirements.txt</a>
+          <a href="https://github.com/blazecodeprakhar/hyperclean-studio" target="_blank" class="btn btn-secondary btn-sm"><i class="fa-brands fa-github"></i> GitHub Repo</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Author Profile Section -->
+    <section class="section" id="author">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">ABOUT DEVELOPER</span>
+          <h2 class="section-title">Created by Prakhar Yadav</h2>
+        </div>
+
+        <div class="author-card">
+          <div class="author-avatar-wrapper">
+            <img src="https://github.com/blazecodeprakhar.png" alt="Prakhar Yadav GitHub Avatar Profile" class="author-avatar" onerror="this.src='app_icon.png'">
+            <span class="author-github-badge" title="Active GitHub Profile"><i class="fa-brands fa-github"></i></span>
+          </div>
+
+          <div class="author-info">
+            <h3 class="author-name">Prakhar Yadav</h3>
+            <div class="author-handle">@blazecodeprakhar</div>
+            <p class="author-bio">
+              Full-Stack Software Engineer, Cybersecurity Specialist, and AI practitioner based in Dehradun, India. Dedicated to building high-performance desktop utilities, secure software tools, and open-source applications.
+            </p>
+
+            <div class="author-socials">
+              <a href="https://github.com/blazecodeprakhar" target="_blank" class="btn btn-primary btn-sm" aria-label="GitHub Profile">
+                <i class="fa-brands fa-github"></i> GitHub Profile
+              </a>
+              <a href="https://blazecodeprakhar.netlify.app" target="_blank" class="btn btn-secondary btn-sm" aria-label="Portfolio Website">
+                <i class="fa-solid fa-globe"></i> Portfolio Website
+              </a>
+              <a href="https://www.linkedin.com/in/prakhar-yadav096/" target="_blank" class="btn btn-secondary btn-sm" aria-label="LinkedIn Profile">
+                <i class="fa-brands fa-linkedin" style="color: #0a66c2;"></i> LinkedIn
+              </a>
+              <a href="https://x.com/iitzprakhar" target="_blank" class="btn btn-secondary btn-sm" aria-label="Twitter X Profile">
+                <i class="fa-brands fa-x-twitter"></i> Twitter / X
+              </a>
+              <a href="https://www.instagram.com/iitzprakhar/" target="_blank" class="btn btn-secondary btn-sm" aria-label="Instagram Profile">
+                <i class="fa-brands fa-instagram" style="color: #e1306c;"></i> Instagram
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Professional Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <a href="#" class="brand-logo" aria-label="HyperClean Studio Footer Logo">
+          <img src="app_icon.png" alt="HyperClean Icon" class="brand-icon-img">
+          <span class="brand-title">HyperClean Studio</span>
+          <span class="brand-version">v2.0</span>
+        </a>
+        <p class="footer-desc">Open-source Windows system optimization utility & RAM manager.</p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer Navigation">
+        <a href="#overview">Overview</a>
+        <a href="#specifications">Specifications</a>
+        <a href="#features">Features</a>
+        <a href="#downloads">Downloads</a>
+        <a href="https://blazecodeprakhar.netlify.app" target="_blank">Portfolio</a>
+        <a href="https://github.com/blazecodeprakhar" target="_blank">GitHub</a>
+      </nav>
+
+      <div class="footer-bottom">
+        <p>© 2026 Prakhar Yadav (@blazecodeprakhar). Distributed under the open-source MIT License.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
