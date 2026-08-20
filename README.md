@@ -1,4 +1,4 @@
-# ⚡ HyperClean Studio v2.0 - Performance & Gaming Suite
+# ⚡ HyperClean Studio - Performance & Gaming Suite
 
 <p align="center">
   <img src="https://img.shields.io/badge/Author-blazecodeprakhar-blueviolet?style=for-the-badge&logo=github" alt="Author" />
@@ -12,7 +12,7 @@
 
 ## 🌟 Overview
 
-**HyperClean Studio v2.0** is an all-in-one Windows disk cleanup and performance booster built by **[blazecodeprakhar](https://github.com/blazecodeprakhar)**. It reclaims massive disk space by targeting heavy developer build caches, system junk, browser storage, and uninstalled app leftovers, while featuring a **One-Click Game & RAM Booster** that flushes GPU shader caches and trims process RAM memory safely.
+**HyperClean Studio** is an all-in-one Windows disk cleanup and performance booster built by **[blazecodeprakhar](https://github.com/blazecodeprakhar)**. It reclaims massive disk space by targeting heavy developer build caches, system junk, browser storage, and uninstalled app leftovers, while featuring a **One-Click Game & RAM Booster** that flushes GPU shader caches and trims process RAM memory safely.
 
 ---
 
