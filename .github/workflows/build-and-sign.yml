@@ -1,0 +1,50 @@
+name: Build and Sign HyperClean Studio
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          if (Test-Path requirements.txt) { pip install -r requirements.txt }
+          pip install pyinstaller
+
+      - name: Build Standalone Executable
+        run: |
+          python build_exe.py
+
+      # SignPath Foundation Integration Step
+      # Once approved by SignPath Foundation, uncomment this block and add secret tokens in GitHub Repo Settings:
+      #
+      # - name: Sign Artifact with SignPath
+      #   uses: SignPath/github-action-submit-signing-request@v1.1
+      #   with:
+      #     api-token: ${{ secrets.SIGNPATH_API_TOKEN }}
+      #     organization-id: '${{ secrets.SIGNPATH_ORGANIZATION_ID }}'
+      #     project-slug: 'hyperclean-studio'
+      #     signing-policy-slug: 'release-signing'
+      #     artifact-path: 'HyperCleanStudio.exe'
+      #     wait-for-completion: 'true'
+      #     output-artifact-path: 'signed/HyperCleanStudio.exe'
+
+      - name: Upload Executable Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: HyperCleanStudio-Executable
+          path: HyperCleanStudio.exe

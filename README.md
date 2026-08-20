@@ -72,3 +72,6 @@ Your single portable executable will be generated in `dist/HyperCleanStudio.exe`
 
 Created with ❤️ by **[blazecodeprakhar](https://github.com/blazecodeprakhar)**.
 Distributed under the MIT License.
+
+> **Code Signing Notice**: Code signing provided by the [SignPath Foundation](https://signpath.org/).
+
