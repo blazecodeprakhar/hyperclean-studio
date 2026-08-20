@@ -83,6 +83,7 @@
           <li><a href="#overview">Overview</a></li>
           <li><a href="#specifications">Specifications</a></li>
           <li><a href="#features">Features</a></li>
+          <li><a href="#trust">Trust & Security</a></li>
           <li><a href="#cli">Build Guide</a></li>
           <li><a href="#downloads">Downloads</a></li>
           <li><a href="#author">Author</a></li>
@@ -144,6 +145,19 @@
               <a href="https://github.com/blazecodeprakhar/hyperclean-studio/releases" target="_blank" class="btn btn-secondary btn-lg" aria-label="GitHub Releases">
                 <i class="fa-brands fa-github"></i> GitHub Releases
               </a>
+            </div>
+
+            <!-- Trust Assurance Bar -->
+            <div class="hero-trust-bar" style="margin-top: 14px; margin-bottom: 22px; display: flex; align-items: center; gap: 16px; flex-wrap: wrap; font-size: 0.86rem;">
+              <span style="display: inline-flex; align-items: center; gap: 6px; font-weight: 600; color: #059669; background: rgba(5, 150, 105, 0.08); padding: 4px 10px; border-radius: 20px;">
+                <i class="fa-solid fa-shield-check"></i> SignPath Foundation Certified
+              </span>
+              <span style="display: inline-flex; align-items: center; gap: 6px; font-weight: 600; color: #0284c7; background: rgba(2, 132, 199, 0.08); padding: 4px 10px; border-radius: 20px;">
+                <i class="fa-solid fa-lock"></i> 100% Offline & Telemetry-Free
+              </span>
+              <span style="display: inline-flex; align-items: center; gap: 6px; font-weight: 600; color: #7c3aed; background: rgba(124, 58, 237, 0.08); padding: 4px 10px; border-radius: 20px;">
+                <i class="fa-solid fa-code"></i> Open Source MIT License
+              </span>
             </div>
 
             <!-- Specs Summary -->
@@ -344,6 +358,82 @@
 
           <div class="demo-terminal" id="demo-terminal">
             <div style="color: #64748b;">Click "Run Simulation" to execute the detection scan pipeline...</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trust & Security Center -->
+    <section class="section section-trust" id="trust">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag" style="background: rgba(16, 185, 129, 0.1); color: #059669; border: 1px solid rgba(16, 185, 129, 0.25);">
+            <i class="fa-solid fa-shield-check"></i> TRUST & SECURITY GUARANTEE
+          </span>
+          <h2 class="section-title">Built for Total Security & Verification</h2>
+          <p class="section-desc">HyperClean Studio is 100% open source, certified by SignPath Foundation, and operates entirely offline on your system.</p>
+        </div>
+
+        <div class="trust-grid">
+          <!-- Trust Card 1 -->
+          <div class="trust-card">
+            <div class="trust-card-icon" style="color: #059669; background: rgba(5, 150, 105, 0.1);">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <h3>100% Transparent & Open Source</h3>
+            <p>Every single line of code is published on GitHub under the permissive MIT License. You can inspect every function, detector module, and build script.</p>
+            <a href="https://github.com/blazecodeprakhar/hyperclean-studio" target="_blank" class="trust-link">
+              Inspect Source on GitHub <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <!-- Trust Card 2 -->
+          <div class="trust-card">
+            <div class="trust-card-icon" style="color: #0284c7; background: rgba(2, 132, 199, 0.1);">
+              <i class="fa-solid fa-stamp"></i>
+            </div>
+            <h3>Authenticode Code Signed</h3>
+            <p>Code signing for release builds is managed via GitHub Actions and authenticated by the <strong>SignPath Foundation</strong> for verified binary integrity.</p>
+            <a href="https://signpath.org/" target="_blank" class="trust-link">
+              Verify SignPath Program <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <!-- Trust Card 3 -->
+          <div class="trust-card">
+            <div class="trust-card-icon" style="color: #7c3aed; background: rgba(124, 58, 237, 0.1);">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <h3>Zero Telemetry & 100% Offline</h3>
+            <p>Runs strictly on your machine. HyperClean Studio contains zero ads, zero analytics tracking, and makes no hidden external network connections.</p>
+            <span class="trust-pill"><i class="fa-solid fa-lock"></i> 100% Privacy Guarantee</span>
+          </div>
+
+          <!-- Trust Card 4 -->
+          <div class="trust-card">
+            <div class="trust-card-icon" style="color: #d97706; background: rgba(217, 119, 6, 0.1);">
+              <i class="fa-solid fa-gears"></i>
+            </div>
+            <h3>Safe Native Win32 APIs</h3>
+            <p>Trims process memory using standard Win32 <code>EmptyWorkingSet</code> system calls. No kernel drivers, background services, or risky registry hacks.</p>
+            <span class="trust-pill"><i class="fa-brands fa-windows"></i> Official Win32 APIs</span>
+          </div>
+        </div>
+
+        <!-- Verification Checksum Box -->
+        <div class="checksum-box">
+          <div class="checksum-header">
+            <div class="checksum-title-group">
+              <div class="checksum-icon"><i class="fa-solid fa-fingerprint"></i></div>
+              <div>
+                <h4>Self-Verify Executable Checksum (SHA-256)</h4>
+                <p>Ensure your downloaded executable is genuine and untampered by running this PowerShell command on your PC:</p>
+              </div>
+            </div>
+          </div>
+          <div class="checksum-cmd-row">
+            <code>Get-FileHash HyperCleanStudio.exe -Algorithm SHA256</code>
+            <button class="copy-btn" onclick="copyCode('Get-FileHash HyperCleanStudio.exe -Algorithm SHA256', this)">Copy Command</button>
           </div>
         </div>
       </div>
