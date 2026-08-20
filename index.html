@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <!-- Primary SEO Tags -->
-  <title>HyperClean Studio | Free Open Source Windows Cleaner & RAM Optimizer</title>
-  <meta name="title" content="HyperClean Studio | Free Open Source Windows Cleaner & RAM Optimizer">
-  <meta name="description" content="HyperClean Studio is a free open-source Windows disk cleanup utility and RAM manager created by Prakhar Yadav (@blazecodeprakhar). Reclaim gigabytes from developer caches, purge GPU shader pipelines, and trim RAM working sets.">
-  <meta name="keywords" content="hyperclean studio, windows cleaner, ram optimizer, disk cleanup, dev cache cleaner, npm cache clean, shader cache purge, win32 emptyworkingset, prakhar yadav, blazecodeprakhar, open source windows cleaner, customtkinter python, performance suite">
+  <title>HyperClean Studio | Free Developer Cache Cleaner & Windows RAM Optimizer</title>
+  <meta name="title" content="HyperClean Studio | Free Developer Cache Cleaner & Windows RAM Optimizer">
+  <meta name="description" content="Clean NPM cache, Python Pip, Gradle, Cargo, Go, and VS Code workspace storage on Windows. HyperClean Studio is a free open-source developer cache cleaner and Win32 RAM optimizer by Prakhar Yadav (@blazecodeprakhar).">
+  <meta name="keywords" content="clean npm cache, developer cache cleaner, clear pip cache, clear gradle build cache, cargo cache clean, go build cache clean, vs code workspaceStorage clean, windows dev disk cleaner, open source developer cleaner, pnpm store prune, yarn cache clean, GPU shader cache purge, win32 emptyworkingset, hyperclean studio, prakhar yadav, blazecodeprakhar">
   <meta name="author" content="Prakhar Yadav (blazecodeprakhar)">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <link rel="canonical" href="https://blazecodeprakhar.github.io/hyperclean-studio/">
@@ -16,16 +16,16 @@
   <!-- Open Graph / Social Sharing -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://blazecodeprakhar.github.io/hyperclean-studio/">
-  <meta property="og:title" content="HyperClean Studio | Free Open Source Windows Cleaner & RAM Optimizer">
-  <meta property="og:description" content="Reclaim gigabytes of disk space from developer caches, purge GPU shader pipelines, and trim Windows RAM working sets instantly with HyperClean Studio by Prakhar Yadav.">
+  <meta property="og:title" content="HyperClean Studio | Free Developer Cache Cleaner & Windows RAM Optimizer">
+  <meta property="og:description" content="Reclaim 30+ GB from NPM, Pip, Gradle, Cargo, Go, and VS Code caches. Free open-source developer cache cleaner and Win32 RAM manager by Prakhar Yadav.">
   <meta property="og:image" content="app_icon.png">
   <meta property="og:site_name" content="HyperClean Studio">
 
   <!-- Twitter / X Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:url" content="https://blazecodeprakhar.github.io/hyperclean-studio/">
-  <meta name="twitter:title" content="HyperClean Studio | Free Open Source Windows Cleaner & RAM Optimizer">
-  <meta name="twitter:description" content="Reclaim gigabytes of disk space from developer caches, purge GPU shader pipelines, and trim Windows RAM working sets instantly.">
+  <meta name="twitter:title" content="HyperClean Studio | Free Developer Cache Cleaner & Windows RAM Optimizer">
+  <meta name="twitter:description" content="Clean NPM cache, Pip, Gradle, Cargo, and Go build caches instantly on Windows. Free open-source developer tool.">
   <meta name="twitter:image" content="app_icon.png">
   <meta name="twitter:creator" content="@iitzprakhar">
 
@@ -41,30 +41,71 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "HyperClean Studio",
-    "operatingSystem": "Windows 10, Windows 11",
-    "applicationCategory": "UtilitiesApplication",
-    "softwareVersion": "2.0",
-    "description": "HyperClean Studio is an open-source Windows disk cleaner and RAM manager created by Prakhar Yadav (blazecodeprakhar). Reclaim disk space from developer caches, RAM working sets, GPU shader pipelines, and leftover files.",
-    "offers": {
-      "@type": "Offer",
-      "price": "0.00",
-      "priceCurrency": "USD"
-    },
-    "author": {
-      "@type": "Person",
-      "name": "Prakhar Yadav",
-      "alternateName": "blazecodeprakhar",
-      "url": "https://blazecodeprakhar.netlify.app",
-      "sameAs": [
-        "https://github.com/blazecodeprakhar",
-        "https://www.linkedin.com/in/prakhar-yadav096/",
-        "https://x.com/iitzprakhar"
-      ]
-    },
-    "downloadUrl": "https://github.com/blazecodeprakhar/hyperclean-studio",
-    "license": "https://opensource.org/licenses/MIT"
+    "@graph": [
+      {
+        "@type": "SoftwareApplication",
+        "name": "HyperClean Studio",
+        "operatingSystem": "Windows 10, Windows 11, Windows Server",
+        "applicationCategory": "UtilitiesApplication",
+        "softwareVersion": "2.0",
+        "description": "HyperClean Studio is an open-source Windows developer cache cleaner and RAM manager created by Prakhar Yadav (blazecodeprakhar). Reclaim disk space from NPM, Pip, Gradle, Cargo, Go, VS Code workspace storage, and GPU shader caches.",
+        "offers": {
+          "@type": "Offer",
+          "price": "0.00",
+          "priceCurrency": "USD"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Prakhar Yadav",
+          "alternateName": "blazecodeprakhar",
+          "url": "https://blazecodeprakhar.netlify.app",
+          "sameAs": [
+            "https://github.com/blazecodeprakhar",
+            "https://www.linkedin.com/in/prakhar-yadav096/",
+            "https://x.com/iitzprakhar"
+          ]
+        },
+        "downloadUrl": "https://github.com/blazecodeprakhar/hyperclean-studio",
+        "license": "https://opensource.org/licenses/MIT"
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How do I clean NPM, Yarn, and PNPM package caches on Windows?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "HyperClean Studio automatically scans %AppData%\\npm-cache, %LocalAppData%\\Yarn\\Cache, and %LocalAppData%\\pnpm\\store, allowing you to reclaim gigabytes of orphaned JavaScript package tarballs with one click."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I clear Python Pip, Poetry, and UV caches on Windows?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "HyperClean Studio targets %LocalAppData%\\pip\\Cache, PyPI HTTP downloads, Poetry cache, and UV package stores to clean accumulated wheel files and binary distributions."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I free up disk space from VS Code workspaceStorage?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "VS Code accumulates gigabytes of cached extension data in %AppData%\\Code\\User\\workspaceStorage. HyperClean Studio safely audits and purges obsolete workspace states."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is it safe to clear Gradle, Cargo, and Go build caches?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Build caches in .gradle/caches, .cargo/registry, and go-build store temporary downloaded artifacts that can be safely deleted and regenerated on demand."
+            }
+          }
+        ]
+      }
+    ]
   }
   </script>
 </head>
@@ -80,30 +121,18 @@
 
       <nav class="nav-menu" id="nav-menu">
         <ul class="nav-links">
-          <li><a href="#overview">Overview</a></li>
-          <li><a href="#specifications">Specifications</a></li>
           <li><a href="#features">Features</a></li>
           <li><a href="#trust">Trust & Security</a></li>
-          <li><a href="#cli">Build Guide</a></li>
           <li><a href="#downloads">Downloads</a></li>
-          <li><a href="#author">Author</a></li>
         </ul>
-        <div class="nav-mobile-actions">
-          <a href="https://github.com/blazecodeprakhar/hyperclean-studio" target="_blank" class="btn btn-secondary btn-sm" aria-label="View on GitHub">
-            <i class="fa-brands fa-github"></i> GitHub
-          </a>
-          <a href="HyperCleanStudio-v2.0.zip" download="HyperCleanStudio-v2.0.zip" class="btn btn-primary btn-sm download-exe-trigger" aria-label="Download Windows Executable ZIP">
-            <i class="fa-brands fa-windows"></i> Download App (.zip)
-          </a>
-        </div>
       </nav>
 
       <div class="nav-actions">
         <a href="https://github.com/blazecodeprakhar/hyperclean-studio" target="_blank" class="btn btn-secondary btn-sm" aria-label="View on GitHub">
           <i class="fa-brands fa-github"></i> GitHub
         </a>
-        <a href="HyperCleanStudio-v2.0.zip" download="HyperCleanStudio-v2.0.zip" class="btn btn-primary btn-sm download-exe-trigger" aria-label="Download Windows Executable ZIP">
-          <i class="fa-brands fa-windows"></i> Download App (.zip)
+        <a href="HyperCleanStudio-v2.0.zip" download="HyperCleanStudio-v2.0.zip" class="btn btn-primary btn-sm download-exe-trigger" aria-label="Download App">
+          <i class="fa-solid fa-download"></i> Download
         </a>
       </div>
 
@@ -337,28 +366,6 @@
               <li><i class="fa-solid fa-check"></i> Audits temporary script files (.bat, .vbs, .ps1)</li>
               <li><i class="fa-solid fa-check"></i> Cleans Chrome, Edge, Brave, and Firefox caches</li>
             </ul>
-          </article>
-        </div>
-
-        <!-- Simulation Scan Box -->
-        <div class="demo-box">
-          <div class="demo-top">
-            <div>
-              <h4>Interactive Detector Simulation</h4>
-              <p>Test the detection algorithm directly in your browser.</p>
-            </div>
-            <button class="btn btn-primary btn-sm" id="start-demo-btn" aria-label="Run Simulation">
-              <i class="fa-solid fa-play"></i> Run Simulation
-            </button>
-          </div>
-
-          <div class="progress-bar">
-            <div class="progress-fill" id="demo-progress-fill"></div>
-          </div>
-
-          <div class="demo-terminal" id="demo-terminal">
-            <div style="color: #64748b;">Click "Run Simulation" to execute the detection scan pipeline...</div>
-          </div>
         </div>
       </div>
     </section>
